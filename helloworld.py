@@ -59,9 +59,10 @@ print("Sum of first", n, "natural numbers is:", sum) """
 
 """for i in range(10):
     print(i)"""
-
+"""
+"""
 # Build a calculator where 1 is addition, 2 is subtraction, 3 is multiplication, 4 is division and 5 is exit
-while True:
+"""while True:
     print("1. Addition")
     print("2. Subtraction")
     print("3. Multiplication")
@@ -85,4 +86,30 @@ while True:
         else:
             print("Quotient is:", a / b)
     if choice < 1 or choice > 5:
-        print("Invalid choice. Please try again.")
+        print("Invalid choice. Please try again.") 
+"""
+
+#print(__doc__)
+
+
+
+# input two strings and check if they are anagrams or not
+str1 = input("Enter the first string: ")
+str2 = input("Enter the second string: ")
+
+# Convert strings to lowercase and remove spaces
+str1 = str1.replace(" ", "").lower()
+str2 = str2.replace(" ", "").lower()
+
+# Check if the sorted characters of both strings are equal
+if sorted(str1) == sorted(str2):
+    print("The strings are anagrams.")
+else:
+    print("The strings are not anagrams.")
+
+
+"""s = "We love Python programming"
+# Expected output is for every word in the string the first charactor should become the last character
+words = s.split()
+for word in words:
+    print(word[-1] + word[1:-1] + word[0], end=" ")"""
