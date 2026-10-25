@@ -31,7 +31,7 @@ if a>b:
 else:
     print("b is greater than a")"""
 
-a=int(input("Enter a number a: "))
+"""a=int(input("Enter a number a: "))
 b=int(input("Enter a number b: "))
 c=int(input("Enter a number c: "))
 if a>b and a>c:
@@ -39,5 +39,50 @@ if a>b and a>c:
 elif b>a and b>c:
     print("b is the greatest")
 else:
-    print("c is the greatest")
+    print("c is the greatest")"""
 
+"""i = 0
+while i < 5:
+    print(i)
+    i += 1"""
+
+# Sum of N natural numbers
+"""n = int(input("Enter a number: "))
+i = 1
+sum = 0
+while i <= n:
+    sum = sum + i
+    i += 1
+print("Sum of first", n, "natural numbers is:", sum) """
+
+# for <variable> in <iterable>:
+
+"""for i in range(10):
+    print(i)"""
+
+# Build a calculator where 1 is addition, 2 is subtraction, 3 is multiplication, 4 is division and 5 is exit
+while True:
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 5:
+        break
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    if choice == 1:
+        print("Sum is:", a + b)
+    elif choice == 2:
+        print("Difference is:", a - b)
+    elif choice == 3:
+        print("Product is:", a * b)
+    elif choice == 4:
+        # Check for division by zero
+        if b == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            print("Quotient is:", a / b)
+    if choice < 1 or choice > 5:
+        print("Invalid choice. Please try again.")
